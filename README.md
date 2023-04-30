@@ -8,6 +8,7 @@
 4. you can see a link in the terminal, open that link in chrome.
 5. This opens the url in the browser, which contains an option to open the webcam
 6. Give the sign laguage gestures using hand to see the intant results displayed on the screen. Below attached is the reference for signs.
+
 ![image](https://user-images.githubusercontent.com/65344410/235353907-235522cc-1919-4ac6-9f8b-5869617bccc7.png)
 
 ## Steps to include new signs and intents :
