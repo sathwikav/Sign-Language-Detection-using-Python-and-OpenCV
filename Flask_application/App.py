@@ -1,10 +1,11 @@
-from flask import Flask, render_template, Response
+from flask import Flask, render_template, Response, request
 import pickle
 
 import cv2
 import mediapipe as mp
 import numpy as np
 import camera
+import os
 
 app = Flask(__name__)
 
@@ -117,7 +118,12 @@ def gen(cam):
 def home():
     return render_template("index.html")
 
-
+@app.route("/",methods=['POST'])
+def getletter():
+    letter = request.form['letter']
+    letter+=".png"
+    print(letter)
+    return render_template("index.html", letter=letter)
 @app.route("/video")
 def video():
     return Response(gen(camera.Webcam()), mimetype='multipart/x-mixed-replace; boundary=frame')

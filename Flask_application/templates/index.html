@@ -19,8 +19,28 @@
       <div>
         <a href="video" width="70%">Webcam</a>
       </div>
+      <h3> Do you want to know the image of your letter???... </h3>
+      <form name="passdata" action="." method="post">
+        <label>Letter(except J and Z) :</label>
+        <input type="text" name="letter"></input>
+        <input type="submit" value="submit">
+      </form>
+      <p></p>
+      <div>
+        {%if letter%}
+        <img
+          src="{{ url_for('static', filename='images/'+letter) }}"
+          class="image"
+        />
+        {%endif%}
+        
+      </div>
     </center>
-
+    <style>
+      .image {
+          width: 200px;
+      }
+    </style>
     <script src="" async defer></script>
   </body>
 </html>
