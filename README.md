@@ -2,6 +2,8 @@
 
 ## steps to run the flask  application :
 
+The given dataset is more than 25MB, this is the link for the dataset : https://www.kaggle.com/datasets/datamunge/sign-language-mnist
+
 1. go to the folder named Flask_application.
 2. open the terminal in that folder location.
 3. run the command "python App.py". If this command doesn't work try running "python3 App.py".
