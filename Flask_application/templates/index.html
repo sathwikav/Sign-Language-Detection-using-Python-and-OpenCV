@@ -28,11 +28,13 @@
       <p></p>
       <div>
         {%if letter%}
-        <img
-          src="{{ url_for('static', filename='images/'+letter) }}"
-          class="image"
-        />
-        {%endif%}
+          {% for l in letter %}
+            <img
+              src="{{ url_for('static', filename='images/'+l+'.png') }}"
+              class="image"
+            />
+          {%endfor%}
+        {% endif%}
         
       </div>
     </center>
