@@ -121,7 +121,7 @@ def home():
 @app.route("/",methods=['POST'])
 def getletter():
     letter = request.form['letter']
-    letter+=".png"
+    
     print(letter)
     return render_template("index.html", letter=letter)
 @app.route("/video")
