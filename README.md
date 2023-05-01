@@ -1,5 +1,9 @@
 # Sign-Language-Detection-using-Python-and-OpenCV
 
+
+This project is built using python, OpenCV and developed using flask. The flask application coverts text to sign language and detects the sign language and coverts it into alphabets. To test, install all the requirements before running the files and follow the steps below. 
+
+
 ## steps to run the flask  application :
 
 The given dataset is more than 25MB, this is the link for the dataset : https://www.kaggle.com/datasets/datamunge/sign-language-mnist
